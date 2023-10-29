@@ -33,7 +33,7 @@ public class HoiDap implements Serializable {
 	private Date thoiGianTraLoi;
 	
 	@ManyToOne
-	@JoinColumn(name = "SoDienThoai") // giống như khai báo khóa ngoại
+	@JoinColumn(name = "SoDienThoai")
 	private KhachHang khachHang;
 	
 	public HoiDap() {
