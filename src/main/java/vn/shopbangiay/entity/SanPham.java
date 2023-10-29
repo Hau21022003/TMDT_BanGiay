@@ -46,7 +46,31 @@ public class SanPham implements Serializable{
 	//lien ket 1-n
 	@OneToMany(mappedBy = "sanPham",fetch = FetchType.EAGER)
 	private List<HinhAnhSanPham> listHinhAnhSanPham;
+	@OneToMany(mappedBy = "sanPham",fetch = FetchType.LAZY)
+	private List<ChiTietSanPham> listChiTietSanPham;
+	@OneToMany(mappedBy = "sanPham",fetch = FetchType.LAZY)
+	private List<DanhGia> listDanhGia;
 	
+	public List<HinhAnhSanPham> getListHinhAnhSanPham() {
+		return listHinhAnhSanPham;
+	}
+
+
+	public void setListHinhAnhSanPham(List<HinhAnhSanPham> listHinhAnhSanPham) {
+		this.listHinhAnhSanPham = listHinhAnhSanPham;
+	}
+
+
+	public List<ChiTietSanPham> getListChiTietSanPham() {
+		return listChiTietSanPham;
+	}
+
+
+	public void setListChiTietSanPham(List<ChiTietSanPham> listChiTietSanPham) {
+		this.listChiTietSanPham = listChiTietSanPham;
+	}
+
+
 	public SanPham() {
 		super();
 	}

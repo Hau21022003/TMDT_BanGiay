@@ -83,6 +83,9 @@ public class TaiKhoan implements Serializable {
 	public void setKhachHang(KhachHang khachHang) {
 		this.khachHang = khachHang;
 	}
+<<<<<<< HEAD
 
 	
+=======
+>>>>>>> jpa
 }

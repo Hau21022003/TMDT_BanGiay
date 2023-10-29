@@ -33,11 +33,77 @@ public class HoiDap implements Serializable {
 	private Date thoiGianTraLoi;
 	
 	@ManyToOne
+<<<<<<< HEAD
 	@JoinColumn(name = "SoDienThoai") 
+=======
+	@JoinColumn(name = "SoDienThoai") // giống như khai báo khóa ngoại
+>>>>>>> jpa
 	private KhachHang khachHang;
 	
 	public HoiDap() {
 		super();
 	}
+<<<<<<< HEAD
    
+=======
+
+	public HoiDap(int maHoiDap, String noiDungHoi, Date thoiGianDoi, Date noiDungTraLoi, Date thoiGianTraLoi,
+			KhachHang khachHang) {
+		super();
+		this.maHoiDap = maHoiDap;
+		this.noiDungHoi = noiDungHoi;
+		this.thoiGianDoi = thoiGianDoi;
+		this.noiDungTraLoi = noiDungTraLoi;
+		this.thoiGianTraLoi = thoiGianTraLoi;
+		this.khachHang = khachHang;
+	}
+
+	public int getMaHoiDap() {
+		return maHoiDap;
+	}
+
+	public void setMaHoiDap(int maHoiDap) {
+		this.maHoiDap = maHoiDap;
+	}
+
+	public String getNoiDungHoi() {
+		return noiDungHoi;
+	}
+
+	public void setNoiDungHoi(String noiDungHoi) {
+		this.noiDungHoi = noiDungHoi;
+	}
+
+	public Date getThoiGianDoi() {
+		return thoiGianDoi;
+	}
+
+	public void setThoiGianDoi(Date thoiGianDoi) {
+		this.thoiGianDoi = thoiGianDoi;
+	}
+
+	public Date getNoiDungTraLoi() {
+		return noiDungTraLoi;
+	}
+
+	public void setNoiDungTraLoi(Date noiDungTraLoi) {
+		this.noiDungTraLoi = noiDungTraLoi;
+	}
+
+	public Date getThoiGianTraLoi() {
+		return thoiGianTraLoi;
+	}
+
+	public void setThoiGianTraLoi(Date thoiGianTraLoi) {
+		this.thoiGianTraLoi = thoiGianTraLoi;
+	}
+
+	public KhachHang getKhachHang() {
+		return khachHang;
+	}
+
+	public void setKhachHang(KhachHang khachHang) {
+		this.khachHang = khachHang;
+	}
+>>>>>>> jpa
 }

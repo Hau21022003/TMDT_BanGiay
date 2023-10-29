@@ -30,4 +30,37 @@ public class LichSuTimKiem implements Serializable {
 		super();
 	}
 
+<<<<<<< HEAD
+=======
+	public LichSuTimKiem(String maLichSuTimKiem, KhachHang khachHang, String noiDung) {
+		super();
+		this.maLichSuTimKiem = maLichSuTimKiem;
+		this.khachHang = khachHang;
+		this.noiDung = noiDung;
+	}
+
+	public String getMaLichSuTimKiem() {
+		return maLichSuTimKiem;
+	}
+
+	public void setMaLichSuTimKiem(String maLichSuTimKiem) {
+		this.maLichSuTimKiem = maLichSuTimKiem;
+	}
+
+	public KhachHang getKhachHang() {
+		return khachHang;
+	}
+
+	public void setKhachHang(KhachHang khachHang) {
+		this.khachHang = khachHang;
+	}
+
+	public String getNoiDung() {
+		return noiDung;
+	}
+
+	public void setNoiDung(String noiDung) {
+		this.noiDung = noiDung;
+	}
+>>>>>>> jpa
 }
