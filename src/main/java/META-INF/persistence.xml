@@ -9,6 +9,20 @@
 		<class>vn.shopbangiay.entity.LoaiSanPham</class>
 		<class>vn.shopbangiay.entity.NhaSanXuat</class>
 		<class>vn.shopbangiay.entity.SanPham</class>
+		<class>vn.shopbangiay.entity.ChiTietHoaDon</class>
+		<class>vn.shopbangiay.entity.ChiTietSanPham</class>
+		<class>vn.shopbangiay.entity.DanhGia</class>
+		<class>vn.shopbangiay.entity.GioHang</class>
+		<class>vn.shopbangiay.entity.HinhAnhSanPham</class>
+		<class>vn.shopbangiay.entity.HoaDon</class>
+		<class>vn.shopbangiay.entity.HoiDap</class>
+		<class>vn.shopbangiay.entity.KhachHang</class>
+		<class>vn.shopbangiay.entity.KichCo</class>
+		<class>vn.shopbangiay.entity.LichSuTimKiem</class>
+		<class>vn.shopbangiay.entity.TaiKhoan</class>
+		<class>vn.shopbangiay.entity.ThanhToan</class>
+		<class>vn.shopbangiay.entity.VanChuyen</class>
+		<class>vn.shopbangiay.entity.Voucher</class>
 	
 		<properties>
 

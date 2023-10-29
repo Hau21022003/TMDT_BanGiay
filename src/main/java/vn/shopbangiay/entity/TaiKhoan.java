@@ -84,5 +84,4 @@ public class TaiKhoan implements Serializable {
 		this.khachHang = khachHang;
 	}
 
-	
 }
