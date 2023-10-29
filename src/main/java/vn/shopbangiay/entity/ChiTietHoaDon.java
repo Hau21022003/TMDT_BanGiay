@@ -20,6 +20,8 @@ public class ChiTietHoaDon implements Serializable {
 	private HoaDon hoaDon;
 	@Column(columnDefinition = "CHECK soLuong > 0")
 	private int soLuong;
+	
+	
 	private int gia;
 	
 	@Id
