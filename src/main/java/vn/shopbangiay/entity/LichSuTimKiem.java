@@ -30,8 +30,7 @@ public class LichSuTimKiem implements Serializable {
 		super();
 	}
 
-<<<<<<< HEAD
-=======
+
 	public LichSuTimKiem(String maLichSuTimKiem, KhachHang khachHang, String noiDung) {
 		super();
 		this.maLichSuTimKiem = maLichSuTimKiem;
@@ -62,5 +61,5 @@ public class LichSuTimKiem implements Serializable {
 	public void setNoiDung(String noiDung) {
 		this.noiDung = noiDung;
 	}
->>>>>>> jpa
+
 }

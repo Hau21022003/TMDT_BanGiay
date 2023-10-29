@@ -33,19 +33,16 @@ public class HoiDap implements Serializable {
 	private Date thoiGianTraLoi;
 	
 	@ManyToOne
-<<<<<<< HEAD
+
 	@JoinColumn(name = "SoDienThoai") 
-=======
+
 	@JoinColumn(name = "SoDienThoai") // giống như khai báo khóa ngoại
->>>>>>> jpa
+
 	private KhachHang khachHang;
 	
 	public HoiDap() {
 		super();
 	}
-<<<<<<< HEAD
-   
-=======
 
 	public HoiDap(int maHoiDap, String noiDungHoi, Date thoiGianDoi, Date noiDungTraLoi, Date thoiGianTraLoi,
 			KhachHang khachHang) {
@@ -105,5 +102,5 @@ public class HoiDap implements Serializable {
 	public void setKhachHang(KhachHang khachHang) {
 		this.khachHang = khachHang;
 	}
->>>>>>> jpa
+
 }

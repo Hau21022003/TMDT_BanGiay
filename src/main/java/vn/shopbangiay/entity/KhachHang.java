@@ -18,11 +18,9 @@ public class KhachHang implements Serializable {
 
 	@Id
 	@Column(name = "SoDienThoai")
-<<<<<<< HEAD
-	private int soDienThoai;
-=======
+
 	private String soDienThoai;
->>>>>>> jpa
+
 
 	@Column(name = "TenKhachHang", columnDefinition = "nvarchar(100)")
 	private String tenKhachHang;
@@ -40,13 +38,12 @@ public class KhachHang implements Serializable {
 	@JoinColumn(name = "tenDangNhap")
 	private TaiKhoan taiKhoan;
 
-<<<<<<< HEAD
 	@OneToMany(mappedBy = "khachHang", fetch = FetchType.EAGER)
 	private List<LichSuTimKiem> lichSuTimKiem; 
 	
 	@OneToMany(mappedBy = "khachHang", fetch = FetchType.EAGER)
 	private List<HoiDap> hoiDap; 
-=======
+
 	@OneToMany(mappedBy = "khachHang", fetch = FetchType.LAZY)
 	private List<LichSuTimKiem> listLichSuTimKiem; 
 	
@@ -61,14 +58,13 @@ public class KhachHang implements Serializable {
 	
 	@OneToMany(mappedBy = "khachHang",fetch = FetchType.LAZY)
 	private List<DanhGia> listDanhGia;
->>>>>>> jpa
+
 
 	public KhachHang() {
 		super();
 	}
 
-<<<<<<< HEAD
-=======
+
 	public KhachHang(String soDienThoai, String tenKhachHang, String diaChi, String diaChiChiTiet, String email,
 			TaiKhoan taiKhoan, List<LichSuTimKiem> listLichSuTimKiem, List<HoiDap> listHoiDap, List<HoaDon> listHoaDon,
 			List<GioHang> listGioHang, List<DanhGia> listDanhGia) {
@@ -173,6 +169,5 @@ public class KhachHang implements Serializable {
 	public void setListDanhGia(List<DanhGia> listDanhGia) {
 		this.listDanhGia = listDanhGia;
 	}
->>>>>>> jpa
-	
+
 }
