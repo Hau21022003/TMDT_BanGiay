@@ -7,30 +7,21 @@ import javax.persistence.*;
  * Entity implementation class for Entity: HinhAnhSanPham
  *
  */
+@IdClass(MaHinhAnhSanPham.class)
 @Entity
-
 public class HinhAnhSanPham implements Serializable {
 
 	
 	private static final long serialVersionUID = 1L;
 	
-	@Embeddable
-	private class HinhAnhSanPhamId{
-		@Id
-		@ManyToOne
-		@JoinColumn(name = "MaSanPham")
-		private SanPham sanPham;
-		
-		private String hinhAnh;
-	}
-	
 	@Id
 	@ManyToOne
-	@JoinColumn(name = "MaSanPham")
+	@JoinColumn(name = "MaSanPham",referencedColumnName = "MaSanPham")
 	private SanPham sanPham;
 	
+	@Id
 	private String hinhAnh;
-
+	
 	public HinhAnhSanPham() {
 		super();
 	}
@@ -57,5 +48,4 @@ public class HinhAnhSanPham implements Serializable {
 		this.hinhAnh = hinhAnh;
 	}
 	
-   
 }
