@@ -15,7 +15,7 @@ public abstract class AbstractDao<T> {
 	public AbstractDao(Class<T> cls) {
 		this.entityClass = cls;
 	}
-	
+	//hau
 	public void insert(T entity) {
 		EntityManager enma = JpaConfig.getEntityManager();
 		EntityTransaction trans = enma.getTransaction();
