@@ -1,9 +1,11 @@
+import vn.shopbangiay.Dao.ChiTietHoaDonDao;
 import vn.shopbangiay.Dao.ChiTietSanPhamDao;
 import vn.shopbangiay.Dao.HinhAnhSanPhamDao;
 import vn.shopbangiay.Dao.HoaDonDao;
 import vn.shopbangiay.Dao.KichCoDao;
 import vn.shopbangiay.Dao.ThanhToanDao;
 import vn.shopbangiay.Dao.VoucherDao;
+import vn.shopbangiay.entity.ChiTietHoaDon;
 import vn.shopbangiay.entity.ChiTietSanPham;
 import vn.shopbangiay.entity.HinhAnhSanPham;
 import vn.shopbangiay.entity.HoaDon;
@@ -16,7 +18,7 @@ public class Test {
 		try {
 			HoaDonDao dao = new HoaDonDao();
 			for(HoaDon p: dao.findAll()) {
-				System.out.println(p.getSoDienThoai());
+				System.out.println(p.getMaHoaDon()+"| "+p.getKhachHang());
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

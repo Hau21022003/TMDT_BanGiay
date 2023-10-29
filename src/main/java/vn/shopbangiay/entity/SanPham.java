@@ -48,8 +48,8 @@ public class SanPham implements Serializable{
 	private List<HinhAnhSanPham> listHinhAnhSanPham;
 	@OneToMany(mappedBy = "sanPham",fetch = FetchType.LAZY)
 	private List<ChiTietSanPham> listChiTietSanPham;
-	
-	
+	@OneToMany(mappedBy = "sanPham",fetch = FetchType.LAZY)
+	private List<DanhGia> listDanhGia;
 	
 	public List<HinhAnhSanPham> getListHinhAnhSanPham() {
 		return listHinhAnhSanPham;
