@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5% !important;
+  box-sizing: border-box;
+  line-height: 1.6rem;
+}
+
+body {
+	
+  	font-family: "Roboto", sans-serif !important;
+}
+
+:root {
+  --color-white: #fff;
+  --color-black: #333;
+  --color-orange-50: #ffefe8;
+  --color-orange-500: #ff5f17;
+  --color-orange-600: #e85615;
+  --color-orange-800: #8c340d;
+  --color-grey-4: #f3f3f3;
+  --color-grey-6: #cccccc;
+  --color-grey-7: #7a7a7a;
+  --color-red-50: #feecee;
+  --color-red-500: #f33f51;
+  --color-red-600: #dd394a;
+}
+
+
+.d-flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.d-flex-column {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+/*Text style*/
+.text-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.text-subtitle {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.text-description {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.text-h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.text-medium {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
