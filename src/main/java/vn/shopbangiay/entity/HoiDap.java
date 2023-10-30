@@ -33,12 +33,9 @@ public class HoiDap implements Serializable {
 	private Date thoiGianTraLoi;
 	
 	@ManyToOne
-<<<<<<< HEAD
 	@JoinColumn(name = "SoDienThoai")
-=======
-	@JoinColumn(name = "SoDienThoai") 
 
->>>>>>> master
+
 	private KhachHang khachHang;
 	
 	public HoiDap() {

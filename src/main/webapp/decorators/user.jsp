@@ -11,7 +11,9 @@
 </head>
 <body>
 	<%@include file="/common/user/header.jsp" %>
-	<decorator:body></decorator:body>
+	<div class ="container-xxl">
+		<decorator:body></decorator:body>
+	</div>
 	<%@include file="/common/user/footer.jsp" %>
 </body>
 </html>
